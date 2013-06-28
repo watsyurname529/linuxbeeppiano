@@ -1,3 +1,6 @@
+LINUX BEEP PIANO!
+An extremely lightweight piano that you can run in your terminal.
+
 Thanks for reading this README file.
 
 Now that's out of the way, here's a couple things about the script for the beep piano.
