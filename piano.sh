@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/python 
+#or /your/python/path
 
 done = True
 
