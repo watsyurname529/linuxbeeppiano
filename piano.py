@@ -32,13 +32,13 @@ try:
 
     while True:
 
-	#Get that character
-	x = lin.getch()
-        if x == ord('q'):
-            break
+    #Get that character
+    x = lin.getch()
 
-        elif x in notes.keys():
-            subprocess.call("beep -f {0}".format(notes.get(x, 0)), shell=True)
+    if x == ord('q'):
+        break
+    elif x in notes.keys():
+        subprocess.call("beep -f {0}".format(notes.get(x, 0)), shell=True)
 
 finally:
     #Call commands to properly exit curses and return terminal to original state
