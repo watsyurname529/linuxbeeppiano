@@ -3,6 +3,10 @@
 #Thanks to redditor: 'cpbills'
 #for this wonderful bash code
 
+echo "Welcome to the Linux Beep Piano! (Coded in BASH!)";
+echo "Press keys a-k for whole steps, keys w-u for half steps, and q to exit.";
+echo "Shout out and thank you to redditor 'cpbills' for most of the code!";
+
 while read -sn1 key; do
     case "$key" in
         a)
