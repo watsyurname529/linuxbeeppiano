@@ -66,8 +66,8 @@ try:
 
     #Be friendly
     lin.addstr(" Welcome to the linux beep piano! (Coded in Python!)\n")
-    lin.addstr(" Press keys a-k for whole steps, keys w-u for half steps, and q to exit.\n")
-    lin.addstr(" Plus, press x for up an octave and c for down an octave.\n")
+    lin.addstr(" Press keys a-k for white keys, w-e and t-u for black keys, and q to exit.\n")
+    lin.addstr(" z switches to low octave, c to high octave, x goes back to middle.\n")
 
     while True:
 
@@ -77,11 +77,11 @@ try:
         if x == ord('q'):
             break
         elif x == ord('z'):
-            octave = notes_8va
+            octave = notes_8vb
         elif x == ord('x'):
             octave = notes
         elif x == ord('c'):
-            octave = notes_8vb
+            octave = notes_8va
         elif x in octave.keys():
             subprocess.call("beep -f {0}".format(octave.get(x, 0)), shell=True)
 
